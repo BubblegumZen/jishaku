@@ -57,7 +57,7 @@ async def async_setup(bot: commands.Bot):
     await bot.add_cog(Jishaku(bot=bot))
 
 
-def setup(bot: commands.Bot):  # pylint: disable=inconsistent-return-statements
+async def setup(bot: commands.Bot):  # pylint: disable=inconsistent-return-statements
     """
     The setup function defining the jishaku.cog and jishaku extensions.
     """
