@@ -65,4 +65,4 @@ def setup(bot: commands.Bot):  # pylint: disable=inconsistent-return-statements
     if inspect.iscoroutinefunction(bot.add_cog):
         return async_setup(bot)
 
-    bot.add_cog(Jishaku(bot=bot))
+    await bot.add_cog(Jishaku(bot=bot))
